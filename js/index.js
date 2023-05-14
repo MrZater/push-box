@@ -1,0 +1,1 @@
+import './game.js'//只执行不导入
