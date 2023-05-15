@@ -84,11 +84,12 @@ function playerPoint() {
 
 // 判断游戏是否完成
 export function isWin() {
-    for (let i = 0; i < map.content.length; i++) {
+    for (let i = 0; i < map.correct.length; i++) {
         let point = map.correct[i]; //获取每个正确位置信息
         if (map.content[point.row][point.col] !== map.BOX) { //判断每个正确位置的value是否是箱子的value
             return false; //不是，返回false
         }
     }
+
     return true; //是，返回true
 }

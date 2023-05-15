@@ -25,6 +25,7 @@ window.onkeydown = (e) => { //绑定键盘按键按下事件
         showUI();
         if (isWin()) { //调用win函数，判断游戏是否结束
             // 游戏结束
+            console.log(123);
             over = true; // 将over设为true，不在执行按键事件了
             let win = document.querySelector('.over'); //获取提示胜利dom
             win.className = 'win'; //添加类名，以添加样式，实现提醒文字弹出  
